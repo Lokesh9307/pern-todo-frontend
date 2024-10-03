@@ -1,0 +1,34 @@
+#root {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Onest", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  background: linear-gradient(to bottom, #212020 0%, #252121 40%, #1C1C1C 150%), linear-gradient(to top, rgba(17, 14, 14, 0.4) 0%, rgba(0, 0, 0, 0.653) 200%);
+  background-blend-mode: multiply;
+}
+
+input:focus{
+outline: none;
+}
+
+input{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ 
+.gradient-text{
+  background-image: linear-gradient(-225deg, #2faba9 0%, #C5C1FF 56%, #FFBAC3 100%); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the original text color transparent */
+}
+
+
+.scrollbar::-webkit-scrollbar{
+    visibility: hidden;
+    display: none;
+}
+.main-background{
+  background: linear-gradient(to bottom, #212020 0%, #252121 40%, #1C1C1C 150%), linear-gradient(to top, rgba(17, 14, 14, 0.4) 0%, rgba(0, 0, 0, 0.653) 200%);
+}

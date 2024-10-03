@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    background: linear-gradient(to bottom, #212020 0%, #252121 40%, #1C1C1C 150%), linear-gradient(to top, rgba(17, 14, 14, 0.4) 0%, rgba(0, 0, 0, 0.653) 200%);
+    background-blend-mode: multiply;
+    height: 100vh;
+    width: 100%;
+  }
+
+@layer utilities{
+    .shadow-btn{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+
+@layer utilities{
+    .gradient-btn{
+        background-image: linear-gradient(-225deg, #ff7199d0 0%, #FFA99F 48%, #FF719A 100%);
+    }
+}
+
+@layer utilities{
+    .danger-btn{
+        background-image: linear-gradient(-225deg, #b25545 0%, #D41872 52%, #ff0000 100%);
+    }
+}
+@layer utilities{
+    .submit-btn{
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    }
+}
+
