@@ -52,12 +52,12 @@ const TodoCard = ({ TaskNum, todo_id, description }) => {
 
     return (
         <section
-            className={`w-[18rem] h-[5rem] p-4 flex rounded-md relative`}
+            className={`w-[18rem] h-fit box-border p-4 flex rounded-xl ring-2 ring-offset-white relative bg-white`}
             style={{ backgroundImage: bgColor, backdropFilter: 0.8 }}>
             {/* Task content */}
             <div className=''>
                 <div className='flex gap-2 items-center font-semibold'>Task: {TaskNum}</div>
-                <div className='md:w-[10rem] w-[14rem] h-[3.5rem] overflow-hidden capitalize font-semibold '>{description}</div>
+                <div className='md:w-[10rem] w-[14rem] capitalize font-semibold mt-2'>{description}</div>
             </div>
             
             {/* Edit and Delete buttons */}

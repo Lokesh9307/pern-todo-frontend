@@ -25,7 +25,7 @@ const ListTodos = () => {
     }, [todos]);
 
     return (
-        <section className='md:h-[70vh] h-[60vh] w-auto flex gap-5 md:flex-row flex-col md:justify-normal md:items-start justify-center items-center md:m-0 mt-5'>
+        <section className='h-[25rem] w-auto flex gap-5 md:flex-row flex-col md:justify-normal md:items-start justify-center items-center md:m-0 mt-5'>
             <section className=' md:w-[70vw] w-full h-full rounded-xl relative'>
                 <div className='h-full w-full flex flex-wrap overflow-y-auto p-4 overflow-clip gap-4 scrollbar justify-center flex-1 md:justify-normal '>
                     {todos.map((todo) => (
@@ -38,7 +38,7 @@ const ListTodos = () => {
                     ))}
                 </div>
             </section>
-            <section className=' md:w-[25vw] h-full  rounded-xl'>
+            <section className=' md:w-[25vw] h-fit  rounded-xl'>
                 <div className='flex flex-col justify-center items-center md:p-4 md:gap-3 px-3 py-1'>
                     <h1 className='gradient-text text-3xl font-semibold'>Status</h1>
                    <p className='text-text-color text-xl font-semibold'>Total Tasks: {todos.length}</p>
